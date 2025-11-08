@@ -1,0 +1,80 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/jensonhirst/Orion/main/source"))()
+
+-- Menampilkan notifikasi Loading
+OrionLib:MakeNotification({
+    Name = "DmxeAlt super private gui v2 Loading...",
+    Content = "please wait a moment",
+    Image = "rbxassetid://3203186339",
+    Time = 3
+})
+
+wait(3)
+
+-- Membuat Window dengan Logo dan animasi Intro
+local Window = OrionLib:MakeWindow({
+    Name = "DmxeAlt super private gui v2 | Script Hub",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "MizuHubConfig",
+    IntroEnabled = true,
+    IntroText = "DmxeAlt super private gui",
+    IntroIcon = "rbxassetid://3203186339",  -- Logo untuk Intro
+    Dragable = true  -- Menambahkan fitur dragable agar bisa digeser di layar
+})
+
+-- Tab Universal Scripts
+local UniversalTab = Window:MakeTab({
+    Name = "Universal Scripts",
+    Icon = "rbxassetid://3203186339",  -- Ganti dengan logo yang kamu inginkan
+    PremiumOnly = false
+})
+
+UniversalTab:AddButton({
+    Name = "Fly Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-script-gui-by-me-64129"))())
+    end
+})
+
+UniversalTab:AddButton({
+    Name = "Rc7",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Blue-Rc7-Remake-By-Stygian-48717"))()
+    end
+})
+UniversalTab:AddButton({
+    Name = "coolgui",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-c00lgui-v0a5-by-007n7-loadstring-version-45468"))()
+    end
+})
+
+-- Tab Game Specific Scripts
+local GameTab = Window:MakeTab({
+    Name = "Game Script
+    And universal script",
+    Icon = "rbxassetid://3203186339",  -- Ganti dengan logo yang kamu inginkan
+    PremiumOnly = false
+})
+
+
+GameTab:AddButton({
+    Name = "Ghost Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghosthub-free-premium-features-62168"))()
+    end
+})
+
+GameTab:AddButton({
+    Name = "Polaria",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Polaria-56385"))()168"))()
+    end
+})
+
+GameTab:AddButton({
+    Name = "SSP",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SSP-AGENT-EDITION-44093"))()
+    end
+})
